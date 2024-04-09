@@ -1,9 +1,11 @@
-import Note from './Note';
+
+import Group from './Group';
 
 export default function Main(): JSX.Element {
     return (
         <main id="main">  
-        <Note />
+        <Group />
+        
         </main>
     )
 }
