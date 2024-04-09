@@ -65,8 +65,10 @@
 }
 
     /*Note*/
+    
 
     .note{
+        z-index: 1;
         display: flex;
         padding: 0px 10px 10px 0px;
         justify-content: space-between;;
@@ -75,14 +77,31 @@
         max-width: 350px;
         height: 150px;
         margin-top: 100px;
-        margin-left: 100px;
+        margin-left: 150px;
         border-radius: 30px;
         box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1);
         max-height: 200px;
         background-color: #E42A57;
         font-family: 'Roboto', sans-serif;
         color: #FFFFFF;
+        z-index: 1;
+        
     }
+
+    .note::before{
+        position: relative;
+        margin-top: -10px;
+        left: -349px;
+        top: 102px;
+        content: "";
+        width: 150px;
+        height: 5px;
+        margin-left: 200px;
+        background-color: #888888;
+        z-index: -1;
+    }
+
+   
 
     .note-content{
         overflow-y: auto;
@@ -148,6 +167,40 @@
 
 
     /*Note*/
+
+    /*Group*/
+
+
+    #group{
+        display: flex;
+        margin-top: 50px;
+        margin-left: 60px;
+    }
+
+    #group::before{
+        position: relative;
+        border-radius: 50%;
+        left: 3px;
+        top: 184px;
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-color: #888888;
+        z-index: 1;
+    }
+
+    #group-name{
+        position: relative;
+        font-size: 1.5em;
+        font-weight: 600;
+        top: 140px;
+        left: 120px;
+        font-family: 'Roboto', sans-serif;
+        color: #888888;
+        margin-left: -95px;
+    }
+
+    /*Group*/
 
 
 /*Main*/
